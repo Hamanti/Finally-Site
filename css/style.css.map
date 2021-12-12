@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": ";AAAA,0BAA0B;AAG1B,qCAAqC;AEHrC,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;CAAG;;AAE3B,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;CAAG;;AAElB,AAAA,GAAG,CAAC;EACF,SAAS,EAAE,IAAI;CAAG;;AAEpB,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,gBAAgB,EDVE,OAAO;CCUc;;AAEzC,AAAA,UAAU,CAAC;EACT,SAAS,EAAE,MAAM;EACjB,gBAAgB,EDhBL,OAAO;CCgBc;;AAElC,MAAM,EAAE,SAAS,EAAE,KAAK;EACtB,AAAA,UAAU,CAAC;IACT,SAAS,EAAE,KAAK;GAAG;;;AFdvB,aAAa",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_colors.sass",
+        "../sass/_interface.sass",
+        "../sass/index/blocks/_nav.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
