@@ -1,0 +1,52 @@
+.nav
+  &-header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: #000
+    height: 40px
+    &__geo
+      margin-left: 35px
+      margin-right: 15px
+    &__call-text, &__geo-text
+      margin-left: 15px
+      font-size: 15px
+    &__info
+      display: flex
+    &__auth
+      &-login
+        font-weight: 700
+        margin-left: 10px
+        margin-right: 10px
+        color: #000
+        text-decoration: none
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__img
+      padding-top: 18px
+      padding-bottom: 33px
+    &__logo
+      display: flex
+      align-items: center
+    &__title
+      font-size: 31px
+      +bold
+    &__subtitle
+      font-size: 14px
+    &__menu
+      display: flex
+      grid-gap: 20px
+    &__link
+      +bold
+      text-decoration: none
+      color: $text-color 
+    &__call-button
+      width: 45px
+      height: 45px
+      background-color: $main-color
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center

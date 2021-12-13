@@ -1,5 +1,7 @@
 *
   box-sizing: border-box
+  font-family: 'Roboto', sans-serif
+
   
 input
   outline: none
@@ -10,12 +12,29 @@ img
 body
   margin: 0
   padding: 0
-  background-color: $darken-main-color
+
+.bgcgray
+  background-color: $gray-color
+
+@mixin reg 
+  font-weight: 400
+
+
+@mixin bold 
+  font-weight: 700
+
   
 .container
-  max-width: 1200px
-  background-color: $main-color
+  width: 1200px
+  margin: 0 auto
+
+@media (max-width: 1200px)
+  .container
+    width: 760px
+    
 
 @media (max-width: 768px)
   .container
-    max-width: 575px
+    max-width: 580px
+    width: 90%
+    margin: 0 5%
