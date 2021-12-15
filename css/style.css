@@ -289,6 +289,10 @@ body {
 }
 
 /** Подключение блока "О нас" **/
+.description {
+  margin-bottom: 100px;
+}
+
 .description-cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,6 +369,7 @@ body {
 
 /** Подключение блока "Каталог" **/
 .product {
+  margin-top: 70px;
   -webkit-box-shadow: 1.8px 2.4px 9px 0 rgba(0, 0, 0, 0.08);
           box-shadow: 1.8px 2.4px 9px 0 rgba(0, 0, 0, 0.08);
   display: -webkit-box;
@@ -422,6 +427,7 @@ body {
   color: #c3759e;
   font-weight: 700;
   font-size: 22px;
+  padding-bottom: 30px;
 }
 
 .product__cost-text {
@@ -432,6 +438,8 @@ body {
 }
 
 .products {
+  padding-bottom: 100px;
+  background-color: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,7 +465,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   color: #454545;
-  background-color: #fff;
+  background-color: #f7f7f7;
   padding: 0 23px;
   height: 40px;
   border: none;
@@ -468,5 +476,45 @@ body {
 .products-header__button:first-child {
   color: #fff;
   background-color: #c3759e;
+}
+
+/** Подключение блока "Информация" **/
+.info {
+  background-color: #282828;
+}
+
+.info-block__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-block__card {
+  padding: 130px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-block__memory {
+  font-size: 28px;
+  color: #816890;
+  font-weight: 700;
+  margin: 23px 0 20px;
+}
+
+.info-block__subtitle {
+  font-size: 20px;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
