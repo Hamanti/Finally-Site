@@ -24,6 +24,14 @@ body {
   background-color: #f7f7f7;
 }
 
+.line {
+  width: 52px;
+  height: 2px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+}
+
 .section__title {
   font-size: 46px;
   color: #454545;
@@ -42,10 +50,6 @@ body {
 
 .up-text {
   text-transform: uppercase;
-}
-
-.button {
-  background-color: #c3759e;
 }
 
 .container {
@@ -104,6 +108,21 @@ body {
   margin-right: 10px;
   color: #000;
   text-decoration: none;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-header__auth-login:hover:after {
+  content: '';
+  background-color: black;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
 }
 
 .nav-block {
@@ -152,6 +171,27 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #454545;
+  position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav-block__link:hover {
+  color: #c3759e;
+}
+
+.nav-block__link:hover:after {
+  content: '';
+  background-color: #c3759e;
+  width: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -10px;
+  height: 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  position: absolute;
 }
 
 .nav-block__call-button {
@@ -168,6 +208,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-block__call-button:hover {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #a44778;
 }
 
 /** Подключение главного экрана **/
@@ -176,7 +225,7 @@ body {
   width: 100%;
   height: 916px;
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 
 .display:before {
@@ -236,6 +285,7 @@ body {
   background-color: #d4d4d4;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 /** Подключение блока "О нас" **/
@@ -301,7 +351,122 @@ body {
   background-color: #c3759e;
   width: 44px;
   position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.description-card__link:hover:after {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  left: 0;
+  height: 12px;
+  width: 85px;
 }
 
 /** Подключение блока "Каталог" **/
+.product {
+  -webkit-box-shadow: 1.8px 2.4px 9px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 1.8px 2.4px 9px 0 rgba(0, 0, 0, 0.08);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.product:hover {
+  background-color: #c3759e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.product:hover .product__title, .product:hover .product__subtitle, .product:hover .product__cost-text, .product:hover .product__cost {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.product:hover .line {
+  color: white;
+}
+
+.product__title {
+  font-weight: 700;
+  color: #c3759e;
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.product__subtitle {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #454545;
+  font-size: 15px;
+  margin-bottom: 23px;
+}
+
+.product__cost {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #c3759e;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.product__cost-text {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #454545;
+  font-size: 15px;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #454545;
+}
+
+.products-header__button {
+  font-size: 14px;
+  font-weight: 700;
+  color: #454545;
+  background-color: #fff;
+  padding: 0 23px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.products-header__button:first-child {
+  color: #fff;
+  background-color: #c3759e;
+}
 /*# sourceMappingURL=style.css.map */

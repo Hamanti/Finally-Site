@@ -20,6 +20,18 @@
         margin-right: 10px
         color: #000
         text-decoration: none
+        position: relative
+        transition: 0.5s
+        &:hover
+          &:after
+            content: ''
+            background-color: black
+            left: 0
+            bottom: -3px
+            width: 100%
+            height: 2px
+            transition: 0.5s
+            position: absolute
   &-block
     display: flex
     justify-content: space-between
@@ -41,7 +53,21 @@
     &__link
       +bold
       text-decoration: none
-      color: $text-color 
+      color: $text-color
+      position: relative
+      transition: 0.2s
+      &:hover
+        color: $main-color
+        &:after
+          content: ''
+          background-color: $main-color
+          width: 50%
+          left: 50%
+          transform: translateX(-50%)
+          bottom: -10px
+          height: 2px
+          transition: 0.2s
+          position: absolute
     &__call-button
       width: 45px
       height: 45px
@@ -50,4 +76,9 @@
       display: flex
       align-items: center
       justify-content: center
+      transition: 0.5s
+      &:hover
+        cursor: pointer
+        transition: 0.5s
+        background-color: darken($main-color, 15%)
     

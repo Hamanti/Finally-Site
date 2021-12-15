@@ -1,0 +1,62 @@
+.product
+  box-shadow: 1.8px 2.4px 9px 0 rgba(0, 0, 0, 0.08)
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  transition: 0.5s
+  &:hover
+    background-color: $main-color
+    transition: 0.5s
+    .product
+      &__title, &__subtitle, &__cost-text, &__cost 
+        color: white
+        transition: 0.5s
+    .line
+      color: white
+    
+  &__title
+    +bold
+    color: $main-color
+    font-size: 22px
+    margin-top: 40px
+    margin-bottom: 20px
+    transition: 0.5s
+  &__subtitle
+    transition: 0.5s
+    color: $text-color
+    font-size: 15px
+    margin-bottom: 23px
+  &__cost
+    transition: 0.5s
+    color: $main-color
+    +bold
+    font-size: 22px
+    &-text
+      transition: 0.5s
+      color: $text-color
+      font-size: 15px
+  &s
+    display: flex
+    justify-content: space-between
+    &-block
+    &-header
+      display: flex
+      align-items: center
+      justify-content: space-between
+      color: $text-color
+      &__button
+        font-size: 14px
+        +bold
+        color: $text-color
+        background-color: #fff
+        padding: 0 23px 
+        height: 40px
+        border: none
+        border-radius: 20px
+        margin-left: 10px
+        &:first-child
+          color: #fff
+          background-color: $main-color
+
+      
