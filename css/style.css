@@ -24,6 +24,14 @@ body {
   background-color: #f7f7f7;
 }
 
+.up-text {
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: #c3759e;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -144,5 +152,73 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/** Подключение главного экрана **/
+.display {
+  background-image: url("../img/main/display/fone.png");
+  width: 100%;
+  height: 916px;
+  position: relative;
+  z-index: -2;
+}
+
+.display:before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/main/display/woman.png");
+  bottom: 0;
+  left: 119px;
+  width: 100%;
+  max-width: 992px;
+  height: 885px;
+  z-index: -1;
+}
+
+.display-block {
+  color: #fff;
+}
+
+.display-block__minititle {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.display-block__text {
+  padding-top: 300px;
+  margin-left: 964px;
+}
+
+.display-block__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 90px;
+  margin-top: 10px;
+  margin-bottom: 34px;
+}
+
+.display-block__subtitle {
+  margin: 0;
+  width: 484px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.display-block__button {
+  font-weight: 700;
+  color: #000;
+  height: 50px;
+  width: 206px;
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 25px;
+  border: none;
+}
+
+.display-block__button:hover {
+  background-color: #d4d4d4;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 /*# sourceMappingURL=style.css.map */
