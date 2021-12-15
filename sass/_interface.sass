@@ -23,6 +23,20 @@ body
 @mixin bold 
   font-weight: 700
 
+.section
+  &__title
+    font-size: 46px
+    color: $text-color
+    position: relative
+    &:after
+      content: ''
+      bottom: -18px
+      left: 0
+      height: 3px
+      background-color:#ebebeb
+      width: 92px
+      position: absolute
+
 .up-text
   text-transform: uppercase
 

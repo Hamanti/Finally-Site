@@ -24,6 +24,22 @@ body {
   background-color: #f7f7f7;
 }
 
+.section__title {
+  font-size: 46px;
+  color: #454545;
+  position: relative;
+}
+
+.section__title:after {
+  content: '';
+  bottom: -18px;
+  left: 0;
+  height: 3px;
+  background-color: #ebebeb;
+  width: 92px;
+  position: absolute;
+}
+
 .up-text {
   text-transform: uppercase;
 }
@@ -221,4 +237,71 @@ body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+
+/** Подключение блока "О нас" **/
+.description-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.description-card {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description-card__title {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  color: #454545;
+  margin-bottom: 40px;
+}
+
+.description-card__subtitle {
+  display: block;
+  max-width: 372px;
+  font-size: 15px;
+  text-align: center;
+  color: #939393;
+  margin-bottom: 45px;
+  margin-right: 25px;
+  margin-top: 0;
+}
+
+.description-card__subtitle:last-child {
+  margin-right: 0;
+}
+
+.description-card__link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #c3759e;
+  position: relative;
+}
+
+.description-card__link:after {
+  content: '';
+  bottom: -10px;
+  left: 18px;
+  height: 2px;
+  background-color: #c3759e;
+  width: 44px;
+  position: absolute;
+}
+
+/** Подключение блока "Каталог" **/
 /*# sourceMappingURL=style.css.map */
