@@ -517,4 +517,49 @@ body {
   font-size: 20px;
   color: #fff;
 }
+
+/** Подключение блока "Констультация" **/
+.conslut-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.conslut-flex__title {
+  font-size: 41px;
+  color: #454545;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.conslut-flex__button-call, .conslut-flex__button-sign {
+  width: 206px;
+  height: 49px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+}
+
+.conslut-flex__button-call {
+  background-color: #c3759e;
+  margin-right: 23px;
+  margin-left: 40px;
+}
+
+.conslut-flex__button-sign {
+  background-color: #816890;
+}
+
+.flex-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 70px;
+}
+
+.flex-texts {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
 /*# sourceMappingURL=style.css.map */
