@@ -562,4 +562,107 @@ body {
   padding-top: 60px;
   padding-bottom: 50px;
 }
+
+/** Подключение блока "footer" **/
+.footer {
+  background-color: #816890;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 100px;
+}
+
+.footer-block__subtitle {
+  font-size: 15px;
+  color: #fff;
+  max-width: 270px;
+  display: block;
+  margin-top: 45px;
+}
+
+.footer-block__icons {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 13px;
+}
+
+.footer-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  padding-top: 75px;
+}
+
+.footer-header__title {
+  font-size: 25px;
+  color: #fff;
+  margin: 0;
+}
+
+.footer-header__subtitle {
+  font-size: 11px;
+  color: #fff;
+}
+
+.footer-second {
+  width: 250px;
+}
+
+.footer-second__title {
+  padding-top: 85px;
+  padding-bottom: 53px;
+  font-weight: 400;
+  margin: 0;
+  font-size: 36px;
+  color: #fff;
+}
+
+.footer-second__subtitle {
+  width: 170px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 120px;
+}
+
+.footer-text__flex {
+  width: 170px;
+  height: 121px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.author {
+  color: #fff;
+  font-size: 15px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: right;
+}
 /*# sourceMappingURL=style.css.map */
