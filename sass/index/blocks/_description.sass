@@ -48,7 +48,25 @@
           height: 12px
           width: 85px
           
+@media (max-width: 1200px)
+  .description-block
+    &__cards
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      grid-gap: 30px
+  .description-card
+      margin-top: 50px
+      flex-basis: 45%
+
+@media (max-width: 768px)
+  .description-block
+    &__cards
+      flex-direction: column
+      grid-gap: 30px
+  .description-card
+      margin-top: 50px
+      flex-basis: 100%
           
-        
 
         

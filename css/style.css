@@ -48,6 +48,12 @@ body {
   position: absolute;
 }
 
+@media (max-width: 1200px) {
+  .section__title {
+    font-size: 40px;
+  }
+}
+
 .up-text {
   text-transform: uppercase;
 }
@@ -65,9 +71,8 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 580px;
-    width: 90%;
-    margin: 0 5%;
+    width: 80%;
+    margin: 0 10%;
   }
 }
 
@@ -219,6 +224,30 @@ body {
   background-color: #a44778;
 }
 
+@media (max-width: 1200px) {
+  .nav-block__menu {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-header__geo, .nav-header__geo-text {
+    display: none;
+  }
+}
+
+@media (max-width: 567px) {
+  .nav-header__info {
+    display: none;
+  }
+  .nav-block__title {
+    font-size: 27px;
+  }
+  .nav-block__subtitle {
+    font-size: 14px;
+  }
+}
+
 /** Подключение главного экрана **/
 .display {
   background-image: url("../img/main/display/fone.png");
@@ -286,6 +315,74 @@ body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .display:before {
+    left: 0;
+  }
+  .display-block__text {
+    margin-left: 750px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .display-block__text {
+    margin-left: 60vw;
+  }
+  .display-block__minititle {
+    font-size: 23px;
+  }
+  .display-block__title {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  .display-block__subtitle {
+    width: 330px;
+  }
+}
+
+@media (max-width: 992px) {
+  .display-block__text {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .display-block__minititle {
+    font-size: 23px;
+  }
+  .display-block__title {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  .display-block__subtitle {
+    width: 330px;
+  }
+}
+
+@media (max-width: 567px) {
+  .display-block__minititle {
+    font-size: 14px;
+  }
+  .display-block__title {
+    font-size: 42px;
+  }
+  .display-block__subtitle {
+    font-size: 14px;
+    width: 260px;
+  }
 }
 
 /** Подключение блока "О нас" **/
@@ -365,6 +462,40 @@ body {
   left: 0;
   height: 12px;
   width: 85px;
+}
+
+@media (max-width: 1200px) {
+  .description-block__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 30px;
+  }
+  .description-card {
+    margin-top: 50px;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .description-block__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 30px;
+  }
+  .description-card {
+    margin-top: 50px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 /** Подключение блока "Каталог" **/
@@ -478,6 +609,74 @@ body {
   background-color: #c3759e;
 }
 
+@media (max-width: 1200px) {
+  .products-header__title {
+    width: 300px;
+  }
+  .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    grid-gap: 10px;
+    margin-top: 30px;
+  }
+  .product {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .product__image {
+    padding-top: 15px;
+  }
+  .product__title {
+    font-size: 27px;
+  }
+  .product__subtitle {
+    font-size: 18px;
+  }
+  .product__cost-text {
+    font-size: 18px;
+  }
+  .product__cost {
+    font-size: 26px;
+  }
+  .products {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .products {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 567px) {
+  .products-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .buttons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .products {
+    padding-top: 20px;
+    padding-bottom: 35px;
+  }
+}
+
 /** Подключение блока "Информация" **/
 .info {
   background-color: #282828;
@@ -516,6 +715,36 @@ body {
 .info-block__subtitle {
   font-size: 20px;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .info-block__cards {
+    padding: 50px 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .info-block__card {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    padding: 25px 0;
+  }
+}
+
+@media (max-width: 567px) {
+  .info-block__cards {
+    padding: 50px 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info-block__card {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    padding: 25px 0;
+  }
 }
 
 /** Подключение блока "Констультация" **/
@@ -561,6 +790,64 @@ body {
 .flex-texts {
   padding-top: 60px;
   padding-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  .conslut-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .flex-buttons {
+    padding: 0 0 30px;
+  }
+  .conslut-flex__title {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .conslut-flex__subtitle {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .flex-texts {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 567px) {
+  .flex-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .conslut-flex__button-call {
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }
 
 /** Подключение блока "footer" **/
@@ -664,5 +951,59 @@ body {
   padding-top: 60px;
   padding-bottom: 40px;
   text-align: right;
+}
+
+@media (max-width: 1200px) {
+  .footer-texts {
+    grid-gap: 0;
+  }
+  .footer-second__title {
+    font-size: 28px;
+  }
+  .footer-header__logo {
+    display: none;
+  }
+  .author {
+    padding-top: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 30px;
+  }
+  .footer-text__flex {
+    height: 80px;
+  }
+  .footer-second {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .footer-second__title {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 567px) {
+  .footer-second__subtitle {
+    width: 135px;
+  }
+  .author {
+    font-size: 13px;
+  }
+  .footer-header {
+    padding-top: 35px;
+  }
+  .footer-block__subtitle {
+    margin-top: 20px;
+  }
+  .footer-block__icons {
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
