@@ -16,5 +16,25 @@
   <!-- Подключение шапки -->
   <? include 'content/header.php' ?>
 
+  <section class="comments">
+    <div class="container">
+      <div class="comments-block">
+        <h1 class="comments-block__title">Отзывы наших клиентов</h1>
+        <div class="comments-block__line"></div>
+        <div class="comments-flex">
+          <? include 'content/comment.php'?>
+          <? include 'content/comment.php'?>
+          <? include 'content/comment.php'?>
+
+          <!-- /.comment -->
+        </div>
+        <!-- /.comments-flex -->
+      </div>
+      <!-- /.comments-block -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.comments -->
+
   <!-- Подключение подвала -->
   <? include 'content/footer.php' ?>
