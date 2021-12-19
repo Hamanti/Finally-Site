@@ -37,11 +37,11 @@
             </div>
           </div>
           <div class="nav-block__menu">
-            <a href="#" class="nav-block__link">ГЛАВНАЯ</a>
+            <a href="index.php" class="nav-block__link">ГЛАВНАЯ</a>
             <a href="#" class="nav-block__link">О КОМПАНИИ</a>
-            <a href="#" class="nav-block__link">НОВОСТИ</a>
-            <a href="#" class="nav-block__link">УСЛУГИ</a>
-            <a href="#" class="nav-block__link">ОТЗЫВЫ</a>
+            <a href="news.php" class="nav-block__link">НОВОСТИ</a>
+            <a href="services.php" class="nav-block__link">УСЛУГИ</a>
+            <a href="comments.php" class="nav-block__link">ОТЗЫВЫ</a>
             <a href="#" class="nav-block__link">КОНТАКТЫ</a>
           </div>
           <div class="nav-block__call-button">

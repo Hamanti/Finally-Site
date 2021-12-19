@@ -48,6 +48,33 @@ body {
   position: absolute;
 }
 
+.section__link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #c3759e;
+  position: relative;
+}
+
+.section__link:after {
+  content: '';
+  bottom: -10px;
+  left: 18px;
+  height: 2px;
+  background-color: #c3759e;
+  width: 44px;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section__link:hover:after {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  left: 0;
+  height: 12px;
+  width: 85px;
+}
+
 @media (max-width: 1200px) {
   .section__title {
     font-size: 40px;
@@ -1018,6 +1045,7 @@ body {
 
 .comments-block__title {
   font-size: 41px;
+  margin: 0;
   margin-bottom: 43px;
   text-align: center;
   padding-top: 100px;
@@ -1105,4 +1133,7 @@ body {
   font-size: 14px;
   padding-top: 12px;
 }
+
+/** ====СТРАНИЦА НОВОСТИ **/
+/** Подключение блока "новости" **/
 /*# sourceMappingURL=style.css.map */
