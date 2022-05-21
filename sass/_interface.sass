@@ -2,6 +2,8 @@
   box-sizing: border-box
   font-family: 'Roboto', sans-serif
 
+html
+  scroll-behavior: smooth
 
   
 input
@@ -63,10 +65,21 @@ body
       transition: 0.5s
     &:hover
       &:after
+        cursor: pointer
         transition: 0.5s
         left: 0
-        height: 12px
+        height: 6px
         width: 85px
+
+.section-hovericon
+  width: 24px
+  height: 24px
+  fill: #4d4d4d
+  transition: 0.5s
+  &:hover
+    transition: 0.5s
+    cursor: pointer
+    fill: $main-color
 
 @media (max-width: 1200px)
   .section

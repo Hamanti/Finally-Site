@@ -1,5 +1,5 @@
 .product
-  margin-top: 70px
+  margin-top: 20px
   box-shadow: 1.8px 2.4px 9px 0 rgba(0, 0, 0, 0.08)
   display: flex
   flex-direction: column
@@ -49,6 +49,7 @@
       align-items: center
       justify-content: space-between
       color: $text-color
+      margin-top: 35px
       &__button
         font-size: 14px
         +bold
@@ -59,9 +60,16 @@
         border: none
         border-radius: 20px
         margin-left: 10px
+        transition: 0.4s
         &:first-child
           color: #fff
           background-color: $main-color
+      &__button:hover
+        background-color: $main-color
+        outline: none
+        border: none
+        color: #fff
+        cursor: pointer
 
 
 @media (max-width: 1200px)

@@ -7,6 +7,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input {
   outline: none;
 }
@@ -69,11 +73,27 @@ body {
 }
 
 .section__link:hover:after {
+  cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   left: 0;
-  height: 12px;
+  height: 6px;
   width: 85px;
+}
+
+.section-hovericon {
+  width: 24px;
+  height: 24px;
+  fill: #4d4d4d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section-hovericon:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  fill: #c3759e;
 }
 
 @media (max-width: 1200px) {
@@ -153,7 +173,7 @@ body {
   left: 0;
   bottom: -3px;
   width: 100%;
-  height: 2px;
+  height: 1px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: absolute;
@@ -206,8 +226,8 @@ body {
   text-decoration: none;
   color: #454545;
   position: relative;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav-block__link:hover {
@@ -215,16 +235,16 @@ body {
 }
 
 .nav-block__link:hover:after {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   content: '';
   background-color: #c3759e;
-  width: 50%;
+  width: 80%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   bottom: -10px;
   height: 2px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   position: absolute;
 }
 
@@ -346,9 +366,21 @@ body {
   cursor: pointer;
 }
 
+.birds-left__img {
+  position: absolute;
+  bottom: 0;
+  margin-left: 45px;
+}
+
+.birds-right__img {
+  position: absolute;
+  bottom: 0;
+  margin-left: 940px;
+}
+
 @media (max-width: 1920px) {
   .display-block__text {
-    margin-left: 840px;
+    margin-left: 940px;
   }
 }
 
@@ -508,7 +540,7 @@ body {
 
 /** Подключение блока "Каталог" **/
 .product {
-  margin-top: 70px;
+  margin-top: 20px;
   -webkit-box-shadow: 1.8px 2.4px 9px 0 rgba(0, 0, 0, 0.08);
           box-shadow: 1.8px 2.4px 9px 0 rgba(0, 0, 0, 0.08);
   display: -webkit-box;
@@ -598,6 +630,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #454545;
+  margin-top: 35px;
 }
 
 .products-header__button {
@@ -610,11 +643,21 @@ body {
   border: none;
   border-radius: 20px;
   margin-left: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .products-header__button:first-child {
   color: #fff;
   background-color: #c3759e;
+}
+
+.products-header__button:hover {
+  background-color: #c3759e;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -763,7 +806,7 @@ body {
 }
 
 .conslut-flex__title {
-  font-size: 41px;
+  font-size: 40px;
   color: #454545;
   margin: 0;
   margin-bottom: 25px;
@@ -776,6 +819,8 @@ body {
   color: #fff;
   border-radius: 25px;
   border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .conslut-flex__button-call {
@@ -784,15 +829,29 @@ body {
   margin-left: 40px;
 }
 
+.conslut-flex__button-call:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #92406b;
+}
+
 .conslut-flex__button-sign {
   background-color: #816890;
+}
+
+.conslut-flex__button-sign:hover {
+  cursor: pointer;
+  background-color: #4c3d55;
 }
 
 .flex-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flex-texts {
@@ -876,6 +935,7 @@ body {
   max-width: 270px;
   display: block;
   margin-top: 45px;
+  line-height: 25px;
 }
 
 .footer-block__icons {
@@ -1022,7 +1082,6 @@ body {
 /** Подключение блока "комментарии" **/
 .comments {
   background-image: url("../img/comments/display/fone.png");
-  width: 100vw;
   height: 768px;
 }
 
@@ -1145,6 +1204,7 @@ body {
           flex-direction: row;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  margin-bottom: 60px;
 }
 
 .news {
@@ -1152,6 +1212,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.ournews-block__title, .announc-block__title {
+  margin: 80px 0 0 0;
 }
 
 .ournews-cards {
@@ -1172,8 +1236,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 280px;
-  margin: 56px 0;
+  margin: 60px 0 0 0;
+  height: 495px;
   position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .ournews-card__link {
@@ -1190,8 +1257,6 @@ body {
 .ournews-card__title {
   width: 200px;
   font-size: 22px;
-  margin-top: 34px;
-  margin-bottom: 26px;
 }
 
 .ournews-card__subtitle {
@@ -1202,7 +1267,46 @@ body {
   padding-bottom: 43px;
 }
 
+.ournews-card:hover {
+  background-color: #c3759e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ournews-card:hover .ournews-card__link {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ournews-card:hover .ournews-card__title {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ournews-card:hover .ournews-card__subtitle {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ournews-card:hover .section__link:after {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #fff;
+}
+
+.ournews-card:hover .cercle {
+  color: #c3759e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #fff;
+}
+
 .cercle {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   border-radius: 50%;
   background-color: #c3759e;
   width: 72px;
@@ -1226,10 +1330,14 @@ body {
 }
 
 .cercle__count {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   font-size: 30px;
 }
 
 .cercle__data {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   font-size: 14px;
 }
 
@@ -1239,9 +1347,10 @@ body {
 
 .video-block {
   width: 587px;
-  height: 486px;
+  height: 495px;
   background-color: #fff;
   padding-top: 30px;
+  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1275,7 +1384,6 @@ body {
 
 .video-block__title {
   font-size: 14px;
-  width: 200px;
   color: #979797;
 }
 
@@ -1285,9 +1393,10 @@ body {
 }
 
 .video-block__soc-panel {
+  z-index: 1;
   width: 196px;
   border-radius: 20px;
-  height: 50px;
+  height: 40px;
   margin-top: -25px;
   background-color: #fff;
   display: -webkit-box;
@@ -1307,53 +1416,183 @@ body {
   margin-top: 3px;
 }
 
+.video-block__title {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.video-block__title:hover {
+  -webkit-transform: 0.5s;
+          transform: 0.5s;
+  color: #646464;
+  cursor: pointer;
+}
+
 @media (max-width: 1400px) {
-  .video-block__video-img {
-    width: 370px;
-  }
-  .video-block__soc-panel {
-    margin-top: -120px;
-  }
-  .video-block {
-    margin-top: 90px;
-    width: 420px;
-    height: 437px;
+  .video-block__title {
+    font-size: 16px;
+    text-align: center;
   }
 }
 
 @media (max-width: 1200px) {
+  .news-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .video-block__video-img {
-    width: 300px;
+    width: 525px;
   }
   .video-block__soc-panel {
-    margin-top: -165px;
+    margin-top: -25px;
   }
   .video-block {
-    width: 350px;
+    width: 600px;
   }
 }
 
 @media (max-width: 992px) {
-  .news-blocks {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .video-block {
-    margin-bottom: 30px;
+    margin: 70px auto 30px;
   }
   .announc-block {
     margin-left: 0;
   }
 }
 
+@media (max-width: 756px) {
+  .video-block {
+    width: 80vw;
+  }
+  .video-block__video-img {
+    width: 70vw;
+  }
+}
+
 @media (max-width: 567px) {
+  .video-block__video-img {
+    width: 70vw;
+  }
+  .video-block__soc-panel {
+    margin-top: -25px;
+  }
   .ournews-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+/** ====Модальное окно **/
+/** Подключение блока "модальное окно" **/
+.modal {
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-dialog {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 20px;
+}
+
+.modal-dialog__button-send {
+  width: 80%;
+  height: 40px;
+  background-color: #c3759e;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.modal-dialog__button-send:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 2px solid black;
+  color: #000;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-dialog__forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 20px;
+}
+
+.modal-dialog__forms-input {
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.modal-dialog__button-close {
+  z-index: 2;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.modal-dialog__button-close:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #c3759e;
+}
+
+.modal-dialog__title {
+  font-size: 20px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

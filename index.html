@@ -52,13 +52,13 @@
           </div>
           <div class="nav-block__menu">
             <a href="index.html" class="nav-block__link">ГЛАВНАЯ</a>
-            <a href="#" class="nav-block__link">О КОМПАНИИ</a>
+            <a href="#whatwe" class="nav-block__link">О КОМПАНИИ</a>
             <a href="news.html" class="nav-block__link">НОВОСТИ</a>
             <a href="services.html" class="nav-block__link">УСЛУГИ</a>
             <a href="comments.html" class="nav-block__link">ОТЗЫВЫ</a>
-            <a href="#" class="nav-block__link">КОНТАКТЫ</a>
+            <a href="#footer" class="nav-block__link">КОНТАКТЫ</a>
           </div>
-          <div class="nav-block__call-button">
+          <div class="nav-block__call-button" onclick="OpenOrCloseDialog()">
             <img src="img/main/nav/call_button.png" alt="" />
           </div>
         </div>
@@ -77,16 +77,18 @@
           <p class="display-block__subtitle up-text">Центр работает в Абакане. Работаем по скайпу по миру, он-лайн консультации. По медиации-Сибирь.
           </p>
           <!-- /.display-block__subtitle -->
-          <button class="display-block__button up-text">связаться с нами</button>
+          <button class="display-block__button up-text" onclick="OpenOrCloseDialog()">связаться с нами</button>
           <!-- /.button display-block__button -->
         </div>
+        <div class="birds-left__img"><img src="img/main/display/birds_left.png" alt=""></div>
+        <div class="birds-right__img"><img src="img/main/display/birds_right.png" alt=""></div>
         <!-- /.display-block__text -->
       </div>
       <!-- /.display-block -->
     </section>
     <!-- /.display -->
 
-    <section class="description">
+    <section class="description" id="whatwe">
       <div class="container">
         <div class="description-block">
           <h2 class="section__title descriprion-block__title">Почему мы?</h2>
@@ -225,8 +227,8 @@
           </div>
           <!-- /.conslut-flex -->
           <div class="conslut-flex flex-buttons">
-            <button class="conslut-flex__button-call up-text">заказать звонок</button>
-            <button class="conslut-flex__button-sign up-text">записаться на прием</button>
+            <button class="conslut-flex__button-call up-text" onclick="OpenOrCloseDialog()">заказать звонок</button>
+            <button class="conslut-flex__button-sign up-text" onclick="OpenOrCloseDialog()">записаться на прием</button>
           </div>
           <!-- /.conslut-flex -->
         </div>
@@ -235,7 +237,7 @@
     </section>
     <!-- /.conslut -->
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer-block">
           <div class="footer-second">
@@ -293,11 +295,28 @@
     </footer>
     <!-- /.footer -->
 
+    <div class="modal hidden" id="modalWindow">
+      <div class="modal-dialog">
+        <button class="modal-dialog__button-close" onclick="OpenOrCloseDialog()">&times;</button>
+        <h4 class="modal-dialog__title">Оставить заявку</h4>
+        <form action="#" id="send-sign" class="modal-dialog__forms">
+          <input name="username" type="text" class="modal-dialog__forms-input" placeholder="Ваше имя">
+          <input name="usertg" type="text" class="modal-dialog__forms-input" placeholder="Ваш telegram">
+          <button class="modal-dialog__button-send">Отправить</button>
+        </form>
+        <!-- /.modal-dialog__title -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
     <script>
       new WOW().init();
     </script>

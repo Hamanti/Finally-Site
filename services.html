@@ -52,13 +52,13 @@
           </div>
           <div class="nav-block__menu">
             <a href="index.html" class="nav-block__link">ГЛАВНАЯ</a>
-            <a href="#" class="nav-block__link">О КОМПАНИИ</a>
+            <a href="index.html#whatwe" class="nav-block__link">О КОМПАНИИ</a>
             <a href="news.html" class="nav-block__link">НОВОСТИ</a>
             <a href="services.html" class="nav-block__link">УСЛУГИ</a>
             <a href="comments.html" class="nav-block__link">ОТЗЫВЫ</a>
-            <a href="#" class="nav-block__link">КОНТАКТЫ</a>
+            <a href="#footer" class="nav-block__link">КОНТАКТЫ</a>
           </div>
-          <div class="nav-block__call-button">
+          <div class="nav-block__call-button" onclick="OpenOrCloseDialog()">
             <img src="img/main/nav/call_button.png" alt="" />
           </div>
         </div>
@@ -135,8 +135,8 @@
           </div>
           <!-- /.conslut-flex -->
           <div class="conslut-flex flex-buttons">
-            <button class="conslut-flex__button-call up-text">заказать звонок</button>
-            <button class="conslut-flex__button-sign up-text">записаться на прием</button>
+            <button class="conslut-flex__button-call up-text" onclick="OpenOrCloseDialog()">заказать звонок</button>
+            <button class="conslut-flex__button-sign up-text" onclick="OpenOrCloseDialog()">записаться на прием</button>
           </div>
           <!-- /.conslut-flex -->
         </div>
@@ -145,7 +145,7 @@
     </section>
     <!-- /.conslut -->
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer-block">
           <div class="footer-second">
@@ -203,11 +203,27 @@
     </footer>
     <!-- /.footer -->
 
+    <div class="modal hidden" id="modalWindow">
+      <div class="modal-dialog">
+        <button class="modal-dialog__button-close" onclick="OpenOrCloseDialog()">&times;</button>
+        <h4 class="modal-dialog__title">Оставить заявку</h4>
+        <form action="#" id="send-sign" class="modal-dialog__forms">
+          <input name="username" type="text" class="modal-dialog__forms-input" placeholder="Ваше имя">
+          <input name="usertg" type="text" class="modal-dialog__forms-input" placeholder="Ваш telegram">
+          <button class="modal-dialog__button-send">Отправить</button>
+        </form>
+        <!-- /.modal-dialog__title -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
     <script>
       new WOW().init();
     </script>

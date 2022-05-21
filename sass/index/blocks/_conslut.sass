@@ -3,7 +3,7 @@
     display: flex
   &-flex
     &__title
-      font-size: 41px
+      font-size: 40px
       color: $text-color
       margin: 0
       margin-bottom: 25px
@@ -15,19 +15,26 @@
         color: #fff
         border-radius: 25px
         border: none
+        transition: 0.5s
       &-call
         background-color: $main-color
         margin-right: 23px
         margin-left: 40px
+        &:hover
+          transition: 0.5s
+          cursor: pointer
+          background-color: darken($main-color, 20%)
       &-sign
         background-color: $darken-main-color
-    
+        &:hover
+          cursor: pointer
+          background-color: darken($darken-main-color, 20%)
 
 
 .flex
   &-buttons
     display: flex
-    padding-top: 70px
+    align-items: center
   &-texts
     padding-top: 60px
     padding-bottom: 50px
