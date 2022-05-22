@@ -56,18 +56,21 @@
       color: $text-color
       position: relative
       transition: 0.5s
+      &:after
+        content: ''
+        width: 0
+        height: 2px
+        background-color: $main-color
+        left: 50%
+        transform: translateX(-50%)
+        bottom: -10px
+        height: 2px
+        position: absolute
       &:hover
         color: $main-color
         &:after
           transition: 0.5s
-          content: ''
-          background-color: $main-color
-          width: 80%
-          left: 50%
-          transform: translateX(-50%)
-          bottom: -10px
-          height: 2px
-          position: absolute
+          width: 50px
     &__call-button
       width: 45px
       height: 45px

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="css/slick.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
@@ -100,7 +101,12 @@
             <h1 class="section__title announc-block__title">Анонсы</h1>
             <div class="video-block">
               <div class="video-block__slider">
-                <video  class="video-block__video-img" src="https://www.youtube.com/watch?v=kyoTYFTLm8A" controls></video>
+                <div class="video-block__slider-item">
+                  <video class="slider-item__video" src="https://www.youtube.com/watch?v=kyoTYFTLm8A" controls></video>
+                </div>
+                <div class="video-block__slider-item">
+                  <video class="slider-item__video" src="https://www.youtube.com/watch?v=kyoTYFTLm8A" controls></video>
+                </div>
               </div> 
               <div class="video-block__soc-panel" >
                 <div class="section-hovericon">
@@ -155,7 +161,7 @@
           </div>
               <div class="video-block__info-text">
                   <div class="video-block__name">Рабочий процесс</div>
-                  <div><span class="video-block__title">ПРЕДЫДУЩЕЕ</span> | <span class="video-block__title">СЛЕДУЮЩЕЕ</span></div>
+                  <div><span class="video-block__title arrow-left">ПРЕДЫДУЩЕЕ</span> | <span class="video-block__title arrow-right">СЛЕДУЮЩЕЕ</span></div>
                 </div>
             </div>
             <!-- /.video-block -->
@@ -250,13 +256,13 @@
 
     <div class="modal hidden" id="modalWindow">
       <div class="modal-dialog">
-        <button class="modal-dialog__button-close" onclick="OpenOrCloseDialog()">&times;</button>
         <h4 class="modal-dialog__title">Оставить заявку</h4>
         <form action="#" id="send-sign" class="modal-dialog__forms">
           <input name="username" type="text" class="modal-dialog__forms-input" placeholder="Ваше имя">
           <input name="usertg" type="text" class="modal-dialog__forms-input" placeholder="Ваш telegram">
           <button class="modal-dialog__button-send">Отправить</button>
         </form>
+        <button class="modal-dialog__button-close" onclick="OpenOrCloseDialog()">Закрыть</button>
         <!-- /.modal-dialog__title -->
       </div>
       <!-- /.modal-dialog -->
@@ -274,11 +280,11 @@
     </script>
     <script>
       $(document).ready(function() {
-        $('.video-block__slide').slick({
+        $('.video-block__slider').slick({
           slidesToShow: 1,
-          autoplay: true,
-          autoplaySpeed: 1500,
-          arrows: false,
+          slidesToScroll: 1,
+          prevArrow: $('.arrow-left'),
+          nextArrow: $('.arrow-right'),
         });
       });
     </script>
