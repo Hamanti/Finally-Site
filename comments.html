@@ -62,6 +62,13 @@
             <a href="comments.html" class="nav-block__link">ОТЗЫВЫ</a>
             <a href="#footer" class="nav-block__link">КОНТАКТЫ</a>
           </div>
+          <div class="hamburger-block">
+            <button class="hamburger" type="button"  onclick="OpenOrCloseHamburger()">
+              <div class="hamburger__line"></div>
+              <div class="hamburger__line"></div>
+              <div class="hamburger__line"></div>
+            </button>
+          </div>
           <div class="nav-block__call-button" onclick="OpenOrCloseDialog()">
             <img src="img/main/nav/call_button.png" alt="" />
           </div>
@@ -436,6 +443,26 @@
       <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+
+    <div class="modal-hamburger hide" id="hamburger">
+      <div class="modal-hamburger__dialog">
+        <div class="modal-hamburger__dialog-button wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
+          <div class="hamburger-block">
+            <button class="hamburger" type="button" onclick="OpenOrCloseHamburger()">
+              <div class="hamburger__line"></div>
+              <div class="hamburger__line"></div>
+              <div class="hamburger__line"></div>
+            </button>
+          </div>
+        </div>
+        <a href="index.html" class="modal-hamburger__dialog-button wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">ГЛАВНАЯ</a>
+        <a href="index.html#whatwe" class="modal-hamburger__dialog-button wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">О КОМПАНИИ</a>
+        <a href="news.html" class="modal-hamburger__dialog-button wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">НОВОСТИ</a>
+        <a href="services.html" class="modal-hamburger__dialog-button wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s">УСЛУГИ</a>
+        <a href="comments.html" class="modal-hamburger__dialog-button wow animate__animated animate__fadeInLeft" data-wow-delay="0.6s">ОТЗЫВЫ</a>
+        <a href="#footer" class="modal-hamburger__dialog-button wow animate__animated animate__fadeInLeft" data-wow-delay="0.7s">КОНТАКТЫ</a>
+      </div>
+    </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>

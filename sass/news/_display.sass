@@ -175,9 +175,40 @@
       width: 70vw
 
 @media (max-width: 567px)
+  .card__image
+    width: 100%
+  .ournews-card
+    max-width: 80vw
+    &__image
+      width: 100%
+  .ournews-card:hover
+    background-color: #fff
+    transition: 0.5s
+    .ournews-card
+      &__link
+        color: $main-color
+        transition: 0.5s
+      &__title
+        color: #000
+        transition: 0.5s
+      &__subtitle
+        color: $gray-text
+        transition: 0.5s
+    .section__link:after
+      transition: 0.5s
+      background-color: $main-color
+    .cercle
+      color: #fff
+      transition: 0.5s
+      background-color: $main-color
+  
+
+
+
   .video-block__video-img
     width: 70vw
   .video-block__soc-panel
     margin-top: -25px
   .ournews-cards
     flex-direction: column
+  

@@ -71,6 +71,23 @@ body
         height: 6px
         width: 85px
 
+.hamburger
+  background-color: rgba(#fff, 0)
+  border: none
+  outline: none 
+  display: none
+  flex-direction: column
+  grid-gap: 5px
+  &:hover
+    .hamburger__line
+      background-color: darken($main-color, 20%)
+      transition: 0.5s
+  &__line
+    transition: 0.5s
+    width: 30px
+    height: 3px
+    background-color: $main-color
+
 .section-hovericon
   width: 24px
   height: 24px
@@ -96,9 +113,34 @@ body
 @media (max-width: 1200px)
   .container
     width: 760px
+  
     
 
 @media (max-width: 768px)
   .container
     width: 80%
     margin: 0 10%
+  .hamburger
+    display: flex 
+
+@media (max-width: 567px)  
+  .section__title
+    text-align: center
+    display: flex
+    justify-content: center
+   
+  .section__title:after
+    left: 110px
+
+  .section__link:hover:after
+    content: ''
+    bottom: -10px
+    left: 18px
+    height: 2px
+    background-color: #c3759e
+    width: 44px
+    position: absolute
+    -webkit-transition: 0.5s
+    transition: 0.5s
+
+  

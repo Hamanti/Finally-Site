@@ -1,3 +1,5 @@
+.line
+  color: $main-color
 .product
   margin-top: 20px
   box-shadow: 1.8px 2.4px 9px 0 rgba(0, 0, 0, 0.08)
@@ -49,7 +51,7 @@
       align-items: center
       justify-content: space-between
       color: $text-color
-      margin-top: 35px
+      margin-top: 30px
       &__button
         font-size: 14px
         +bold
@@ -105,8 +107,24 @@
 @media (max-width: 567px)
   .products-header
     flex-direction: column
+    &__button:hover
+     color: $text-color
+     background-color: $gray-color
+      
   .buttons
     justify-content: start
   .products
     padding-top: 20px
-    padding-bottom: 35px
+    padding-bottom: 50px
+
+  .product:hover
+    background-color: $gray-color
+    transition: 0.5s
+    .product
+      &__subtitle, &__cost-text 
+        color: black
+        transition: 0.5s
+      &__title, &__cost
+        color: $main-color
+    .line
+      color: $main-color

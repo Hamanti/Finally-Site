@@ -36,7 +36,7 @@
     display: flex
     align-items: center
   &-texts
-    padding-top: 60px
+    padding-top: 85px
     padding-bottom: 50px
 
 
@@ -63,9 +63,22 @@
 @media (max-width: 567px)
   .flex-buttons
     flex-direction: column
+    padding-bottom: 85px
     align-items: center
     justify-content: center
   .conslut-flex
     &__button-call
       margin: 0
       margin-bottom: 20px
+  .conslut-flex__button
+    &-call
+      &:hover
+        transition: 0.5s
+        cursor: default
+        background-color: $main-color
+    &-sign
+      background-color: $darken-main-color
+      &:hover
+        cursor: default
+        background-color: $darken-main-color
+  

@@ -5,6 +5,11 @@ function OpenOrCloseDialog() {
   windowDlg.classList.toggle('hidden');
 }
 
+function OpenOrCloseHamburger() {
+  var windowDlg = document.getElementById('hamburger');
+  windowDlg.classList.toggle('hide');
+}
+
 $('#send-sign').on('submit', function(event) {
   event.preventDefault();
   $.ajax({
